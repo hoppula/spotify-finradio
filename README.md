@@ -4,6 +4,10 @@ Small proof-of-concept [Spotify](http://www.spotify.com/) application to display
 It uses [YQL](http://developer.yahoo.com/yql/) to get the needed HTML and then converts it to suitable format for the Spotify search API. 
 Search results are then added as tracks to dynamically generated playlists.
 
+# Installing
+
+Copy the whole directory to ~/Spotify if you're on OS X and to My Documents/Spotify if you're on Windows.
+
 # Using
 
 Enter to search field:
