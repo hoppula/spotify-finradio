@@ -24,3 +24,6 @@ I'm not sure if all of these can be addressed, but fixes are always welcome.
 - Sometimes the YQL search can take a while to complete, try switching to other tabs to see if they loaded faster
 - It can also fail to load anything, using "Reload application" from right button menu usually helps
 - When switching tabs, Spotify occasionally renders just the playlist table with empty content, resizing the window will show the tracks again
+
+## Screenshot
+![Screenshot of the app](screenshot.png)
