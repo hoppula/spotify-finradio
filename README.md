@@ -26,4 +26,4 @@ I'm not sure if all of these can be addressed, but fixes are always welcome.
 - When switching tabs, Spotify occasionally renders just the playlist table with empty content, resizing the window will show the tracks again
 
 ## Screenshot
-![Screenshot of the app](screenshot.png)
+![Screenshot of the app](https://github.com/hoppula/spotify-finradio/raw/master/screenshot.png)
