@@ -1,0 +1,38 @@
+{
+  "BundleType": "Application",
+  "BundleIdentifier": "finradio",
+  "AppIcon": {
+    "36x18": "tutorial.png"
+  },
+  "AppName": {
+    "en": "Finnish Radio's most played"
+  },
+  "SupportedLanguages": [
+    "en"
+  ],
+  "RequiredPermissions": [
+    "https://www.googleapis.com",
+    "http://query.yahooapis.com",
+    "http://*.yahooapis.com"
+  ],
+  "DefaultTabs": [
+    {
+      "arguments": "nrj", 
+      "title": {
+        "en": "NRJ"
+      }
+    },
+    {
+      "arguments": "ylex",
+      "title": {
+        "en": "YleX"
+      }
+    },
+    {
+      "arguments": "voice",
+      "title": {
+        "en": "Voice"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Finnish Radio's most played tracks</title>
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="sp://import/css/eve.css">
+  <link rel="stylesheet" href="sp://import/css/shared.css">
+  <link rel="stylesheet" href="sp://import/css/api.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="css2xpath.js"></script>
+
+  <script>
+
+  var sp = getSpotifyApi(1);
+  var models = sp.require("sp://import/scripts/api/models");
+  var views = sp.require("sp://import/scripts/api/views");
+  var Utils = sp.require("utils");
+  var FinRadio = sp.require("finradio");
+
+  $(function() {
+    FinRadio.init();
+
+    $('.add-playlist').live("click", function(event) {
+      event.preventDefault();
+      FinRadio.addPlayList(event.target.value);
+    });    
+  });
+
+  </script>
+</head>
+<body>
+
+  <h1 id="header">Finnish Radio's most played tracks</h1>
+
+  <div id="content">
+
+    <div id="nrj_container" class="container">
+
+      <div class="toolbar">
+        <img src="nrj.png" id="nrj_logo" class="logo">
+        <h2 class="playlist">NRJ (<a href="http://www.nrj.fi/kuumimmathitit">nrj.fi</a>)</h2>
+      </div>
+      
+      <button class="add-playlist button icon" value="nrj"><span class="plus"></span>Add as Playlist</button>
+      
+      <div id="nrj" class="playlist"></div>
+    </div>
+
+    <div id="ylex_container" class="container" style="display: none;">
+
+      <div class="toolbar">
+        <img src="ylex.png" id="ylex_logo" class="logo">
+        <h2 class="playlist">YleX (<a href="http://ylex.yle.fi/">ylex.yle.fi</a>)</h2>
+      </div>
+      
+      <button class="add-playlist button icon" value="ylex"><span class="plus"></span>Add as Playlist</button>
+      
+      <div id="ylex" class="playlist"></div>
+    </div>
+
+    <div id="voice_container" class="container" style="display: none;">
+
+      <div class="toolbar">
+       <img src="voice.png" id="voice_logo" class="logo">
+       <h2 class="playlist">Voice (<a href="http://voice.fi/soittolista/soitetuimmat">voice.fi</a>)</h2>
+      </div>
+
+      <button class="add-playlist button icon" value="voice"><span class="plus"></span>Add as Playlist</button>
+      
+      <div id="voice" class="playlist"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
