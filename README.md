@@ -17,13 +17,5 @@ You have to do this at every time you start Spotify, it won't stay in the sideba
 
 You need a [Spotify Preview](http://www.spotify.com/en/download/previews/) version with [Developer Account](https://developer.spotify.com/technologies/apps/).
 
-## Issues
-
-I'm not sure if all of these can be addressed, but fixes are always welcome.
-
-- Sometimes the YQL search can take a while to complete, try switching to other tabs to see if they loaded faster
-- It can also fail to load anything, using "Reload application" from right button menu usually helps
-- When switching tabs, Spotify occasionally renders just the playlist table with empty content, resizing the window will show the tracks again
-
 ## Screenshot
-![Screenshot of the app](https://github.com/hoppula/spotify-finradio/raw/master/screenshot.png)
+![Screenshot of the app](https://github.com/hoppula/spotify-finradio/raw/master/images/screenshot.png)
