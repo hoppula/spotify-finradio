@@ -1,20 +1,30 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  background: #1577AA; 
-  color: #fff; 
-  text-shadow: none; 
+  background: #1577AA;
+  color: #fff;
+  text-shadow: none;
   padding: 15px 0 15px 20px;
   width: 100%;
-  font-family: 'PT Sans', sans-serif; 
-  font-size: 20pt; 
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20pt;
   text-align: center;
-  z-index: 20000;
 }
 
 #content {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 div.playlist {
